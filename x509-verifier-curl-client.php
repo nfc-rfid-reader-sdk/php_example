@@ -1,4 +1,10 @@
 <?php
+/*
+ * PHP "X.509 Certificate Verifier - cURL Client Example" version 1.0
+ * Testing environment:
+ * - HTTP Server: Apache/2.4.37 (Win32)
+ * - PHP Version: 7.2.13
+ */
 
 require ("http_helper.php");
 
