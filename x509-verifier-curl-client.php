@@ -1,6 +1,6 @@
 <?php
 /*
- * PHP "X.509 Certificate Verifier - cURL Client Example" version 1.0
+ * PHP "X.509 Certificate Verifier - cURL Client Example" version 1.1
  * Testing environment:
  * - HTTP Server: Apache/2.4.37 (Win32)
  * - PHP Version: 7.2.13
@@ -40,7 +40,7 @@ try
         CURLOPT_MAXREDIRS => 10,
         CURLOPT_TIMEOUT => 30,
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-        CURLOPT_CUSTOMREQUEST => "POST",
+        CURLOPT_POST => true,
         CURLOPT_POSTFIELDS => $post_fields,
         CURLOPT_HTTPHEADER => array(
             "Content-Type: multipart/form-data; boundary=" . $boundary
